@@ -17,6 +17,11 @@ namespace MVC
         // GET: Carros
         public ActionResult Index()
         {
+            var service = new CarroServiceReference.Service1Client();
+            var carroes = service.All();
+            var carro = service.GetData(1);
+            var correto = service.Save("Jeep",2014); 
+
             var carros = db.Carros.Include(c => c.Modelo);
             return View(carros.ToList());
         }
