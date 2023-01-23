@@ -1,4 +1,4 @@
-﻿@model MVC.Models.Cliente
+﻿@model EntityFrameworkCodeFirst.Carro
 
 @{
     ViewBag.Title = "Details";
@@ -7,9 +7,17 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Cliente</h4>
+    <h4>Carro</h4>
     <hr />
     <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Modelo.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modelo.Nome)
+        </dd>
+
         <dt>
             @Html.DisplayNameFor(model => model.Nome)
         </dt>
@@ -19,19 +27,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Telefone)
+            @Html.DisplayNameFor(model => model.Ano)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Telefone)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.CPF)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.CPF)
+            @Html.DisplayFor(model => model.Ano)
         </dd>
 
     </dl>

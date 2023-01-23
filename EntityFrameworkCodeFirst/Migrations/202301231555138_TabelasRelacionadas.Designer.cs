@@ -7,13 +7,13 @@ namespace EntityFrameworkCodeFirst.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class DB : IMigrationMetadata
+    public sealed partial class TabelasRelacionadas : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(DB));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(TabelasRelacionadas));
         
         string IMigrationMetadata.Id
         {
-            get { return "202301221706301_DB"; }
+            get { return "202301231555138_TabelasRelacionadas"; }
         }
         
         string IMigrationMetadata.Source

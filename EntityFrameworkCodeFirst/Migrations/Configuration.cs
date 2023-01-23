@@ -5,15 +5,14 @@
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<EntityFrameworkCodeFirst.ClienteContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<EntityFrameworkCodeFirst.BaseContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "EntityFrameworkCodeFirst.ClienteContext";
         }
 
-        protected override void Seed(EntityFrameworkCodeFirst.ClienteContext context)
+        protected override void Seed(EntityFrameworkCodeFirst.BaseContext context)
         {
             //  This method will be called after migrating to the latest version.
 

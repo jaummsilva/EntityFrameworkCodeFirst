@@ -127,13 +127,15 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\Clientes1Controller.cs" />
+    <Compile Include="Controllers\CarrosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Cliente.cs" />
-    <Compile Include="Models\MvcContext.cs" />
+    <Compile Include="Controllers\ModeloesController.cs" />
+    <Compile Include="Models\BaseContext.cs" />
+    <Compile Include="Models\Carro.cs" />
+    <Compile Include="Models\Modelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -172,11 +174,16 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Clientes1\Create.cshtml" />
-    <Content Include="Views\Clientes1\Delete.cshtml" />
-    <Content Include="Views\Clientes1\Details.cshtml" />
-    <Content Include="Views\Clientes1\Edit.cshtml" />
-    <Content Include="Views\Clientes1\Index.cshtml" />
+    <Content Include="Views\Modeloes\Create.cshtml" />
+    <Content Include="Views\Modeloes\Delete.cshtml" />
+    <Content Include="Views\Modeloes\Details.cshtml" />
+    <Content Include="Views\Modeloes\Edit.cshtml" />
+    <Content Include="Views\Modeloes\Index.cshtml" />
+    <Content Include="Views\Carros\Create.cshtml" />
+    <Content Include="Views\Carros\Delete.cshtml" />
+    <Content Include="Views\Carros\Details.cshtml" />
+    <Content Include="Views\Carros\Edit.cshtml" />
+    <Content Include="Views\Carros\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

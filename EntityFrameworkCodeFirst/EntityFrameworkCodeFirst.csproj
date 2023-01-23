@@ -53,26 +53,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Migrations\202301221627363_InitialCreate.cs" />
-    <Compile Include="Migrations\202301221627363_InitialCreate.designer.cs">
-      <DependentUpon>202301221627363_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301221646291_ClienteCPF.cs" />
-    <Compile Include="Migrations\202301221646291_ClienteCPF.designer.cs">
-      <DependentUpon>202301221646291_ClienteCPF.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301221650327_Produto.cs" />
-    <Compile Include="Migrations\202301221650327_Produto.designer.cs">
-      <DependentUpon>202301221650327_Produto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202301221706301_DB.cs" />
-    <Compile Include="Migrations\202301221706301_DB.designer.cs">
-      <DependentUpon>202301221706301_DB.cs</DependentUpon>
+    <Compile Include="BaseContext.cs" />
+    <Compile Include="Carro.cs" />
+    <Compile Include="Migrations\202301231555138_TabelasRelacionadas.cs" />
+    <Compile Include="Migrations\202301231555138_TabelasRelacionadas.designer.cs">
+      <DependentUpon>202301231555138_TabelasRelacionadas.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Produto.cs" />
-    <Compile Include="ClienteContext.cs" />
-    <Compile Include="Cliente.cs" />
+    <Compile Include="Modelo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -81,17 +69,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202301221627363_InitialCreate.resx">
-      <DependentUpon>202301221627363_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301221646291_ClienteCPF.resx">
-      <DependentUpon>202301221646291_ClienteCPF.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301221650327_Produto.resx">
-      <DependentUpon>202301221650327_Produto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202301221706301_DB.resx">
-      <DependentUpon>202301221706301_DB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202301231555138_TabelasRelacionadas.resx">
+      <DependentUpon>202301231555138_TabelasRelacionadas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
