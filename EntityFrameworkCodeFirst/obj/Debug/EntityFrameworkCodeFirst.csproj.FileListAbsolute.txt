@@ -14,3 +14,6 @@ C:\Users\João\source\repos\EntityFrameworkCodeFirst\EntityFrameworkCodeFirst\ob
 C:\Users\João\source\repos\EntityFrameworkCodeFirst\EntityFrameworkCodeFirst\obj\Debug\EntityFrameworkCodeFirst.Migrations.TabelasRelacionadas.resources
 C:\Users\João\source\repos\EntityFrameworkCodeFirst\EntityFrameworkCodeFirst\obj\Debug\EntityFrameworkCodeFirst.csproj.GenerateResource.cache
 C:\Users\João\source\repos\EntityFrameworkCodeFirst\EntityFrameworkCodeFirst\obj\Debug\EntityFrameworkCodeFirst.Migrations.Cliente.resources
+C:\Users\João\source\repos\EntityFrameworkCodeFirst\EntityFrameworkCodeFirst\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\João\source\repos\EntityFrameworkCodeFirst\EntityFrameworkCodeFirst\bin\Debug\itextsharp.dll
+C:\Users\João\source\repos\EntityFrameworkCodeFirst\EntityFrameworkCodeFirst\bin\Debug\itextsharp.xml
