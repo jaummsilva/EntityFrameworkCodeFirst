@@ -12,6 +12,7 @@ namespace EntityFrameworkCodeFirst
         public BaseContext() : base("Relacionamento") { }
         public DbSet<Modelo> Modelos { get; set; }
         public DbSet<Carro> Carros { get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
 
     }       
 }

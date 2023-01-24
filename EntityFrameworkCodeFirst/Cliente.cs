@@ -1,32 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EntityFrameworkCodeFirst
 {
-    public class Modelo
+    public class Cliente
     {
         [Key()]
         public int Id { get; set; }
         [Required]
-        [MaxLength(100,ErrorMessage ="Máximo de caracteres ultrapassados")]
+        [MaxLength(100,ErrorMessage ="Nome muito grande")]
         public string Nome { get; set; }
-
-
         public void Salvar()
         {
             var db = new BaseContext();
-            db.Modelos.Add(this);
+            db.Clientes.Add(this);
             db.SaveChanges();
         }
 
-        public List<Modelo> Todos()
+        public List<Cliente> Todos()
         {
             var db = new BaseContext();
-            return db.Modelos.ToList();
+            return db.Clientes.ToList();
         }
     }
 }

@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseContext.cs" />
+    <Compile Include="Cliente.cs" />
     <Compile Include="Carro.cs" />
     <Compile Include="Connected Services\CarroServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -65,6 +66,10 @@
     <Compile Include="Migrations\202301231555138_TabelasRelacionadas.cs" />
     <Compile Include="Migrations\202301231555138_TabelasRelacionadas.designer.cs">
       <DependentUpon>202301231555138_TabelasRelacionadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301241247114_Cliente.cs" />
+    <Compile Include="Migrations\202301241247114_Cliente.designer.cs">
+      <DependentUpon>202301241247114_Cliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Modelo.cs" />
@@ -94,6 +99,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202301231555138_TabelasRelacionadas.resx">
       <DependentUpon>202301231555138_TabelasRelacionadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301241247114_Cliente.resx">
+      <DependentUpon>202301241247114_Cliente.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
