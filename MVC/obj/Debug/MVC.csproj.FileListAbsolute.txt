@@ -90,3 +90,6 @@ C:\Users\João\source\repos\EntityFrameworkCodeFirst\MVC\obj\Debug\MVC.dll
 C:\Users\João\source\repos\EntityFrameworkCodeFirst\MVC\obj\Debug\MVC.pdb
 C:\Users\João\source\repos\EntityFrameworkCodeFirst\MVC\obj\Debug\MVC.Migrations.Cliente.resources
 C:\Users\João\source\repos\EntityFrameworkCodeFirst\MVC\obj\Debug\MVC.csproj.GenerateResource.cache
+C:\Users\João\source\repos\EntityFrameworkCodeFirst\MVC\bin\BouncyCastle.Crypto.dll
+C:\Users\João\source\repos\EntityFrameworkCodeFirst\MVC\bin\itextsharp.dll
+C:\Users\João\source\repos\EntityFrameworkCodeFirst\MVC\bin\itextsharp.xml

@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using EntityFrameworkCodeFirst;
+using iTextSharp.text.pdf;
+using iTextSharp.text;
 
 namespace MVC
 {
@@ -17,13 +20,47 @@ namespace MVC
         // GET: Carros
         public ActionResult Index()
         {
-            var service = new CarroServiceReference.Service1Client();
-            var carroes = service.All();
-            var carro = service.GetData(1);
-            var correto = service.Save("Jeep",2014); 
+            return View(db.Carros.ToList());
+        }
 
-            var carros = db.Carros.Include(c => c.Modelo);
-            return View(carros.ToList());
+        public ActionResult Pdf()
+        {
+            Document doc = new Document(PageSize.A4);
+            doc.SetMargins(40, 40, 40, 80);
+            doc.AddCreationDate();
+            string caminho = AppDomain.CurrentDomain.BaseDirectory + @"\pdf\" + "relatorio.pdf";
+
+            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(caminho, FileMode.Create));
+
+            doc.Open();
+
+            Paragraph titulo = new Paragraph();
+            titulo.Font = new Font(Font.FontFamily.COURIER, 40);
+            titulo.Alignment = Element.ALIGN_CENTER;
+            titulo.Add("Testeee");
+            doc.Add(titulo);
+
+            Paragraph paragrafo = new Paragraph("", new Font(Font.NORMAL, 12));
+            string conteudo = "Lorem Ipsum is simply dummy text of printing.\n\n";
+            paragrafo.Add(conteudo);
+            doc.Add(paragrafo);
+
+            PdfPTable table = new PdfPTable(3);
+
+            table.AddCell("Linha 1 ,Coluna 1");
+            table.AddCell("Linha 1 ,Coluna 2");
+            table.AddCell("Linha 1 ,Coluna 3");
+
+            table.AddCell("Linha 2 ,Coluna 1");
+            table.AddCell("Linha 2 ,Coluna 2");
+            table.AddCell("Linha 2 ,Coluna 3");
+
+            doc.Add(table);
+            doc.Close();
+
+            return Redirect("/pdf/relatorio.pdf");
+
+
         }
 
         // GET: Carros/Details/5
